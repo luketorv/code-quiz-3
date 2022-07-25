@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="has-background-black">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <title>Coding Quiz Challenge</title>
 </head>
-<body>
-  <nav>
-    <div>View Highscores</div>
-    <div>Time: <span id="timer"></span></div>
+<body class="has-background-black">
+  <nav class="box level has-background-primary">
+    <div class="title is-4 level-left">Highscores:<span id="score-name-input">none</span></div>
+    <div class="title is-4 level-right">Time: <span id="timer"></span></div>
   </nav>
-  <main>
+  <main id="quizSection" class="box has-background-primary">
     <div>
-      <h3>Coding Quiz Challenge</h3>
+      <h3 class="title is-1">Coding Quiz Challenge</h3>
       <p>
         Try to answer the following code-related questions within the time
         limit. Keep in mind that incorrect answers will penalize your
-        score/time by ten seconds!
+        score/time by fifteen seconds!
       </p>
-      <button id="startBtn">Start Quiz</button>
+      <button class="button" id="startBtn">Start Quiz</button>
     </div>
   </main>
   <script src="./assets/js/index.js"></script>
